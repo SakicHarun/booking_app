@@ -4,7 +4,7 @@ const Explore = () => {
   return (
   <div className='w-full flex '>
        
-    <div className='container mx-auto mt-20 grid grid-cols-1 md:grid-cols-2  '>
+    <div className='container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2  '>
 
         <div>
         <h1 className='text-6xl mt-10  font-semibold  text-[#323642] whitespace-nowrap'>Explore amazing <br /> <br /> accomodation <br /> <br />
