@@ -9,7 +9,9 @@ const Accomodations = () => {
      
   
      <div>
-       <img src="/hoteldubrovnik.png" alt="Hotel Dubrovnik" />       
+      <a href="/reservationDetails">
+      <img src="/hoteldubrovnik.png" alt="Hotel Dubrovnik" />   
+      </a>        
      </div>
 
      <div>
