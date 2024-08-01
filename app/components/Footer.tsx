@@ -1,16 +1,12 @@
 import React from 'react';
 
-interface FooterProps {
-  className?: string;
-}
-
 const Footer = () => {
   return (
-    <div className='w-full bg-[#393939] mt-20'>
+    <div className='w-full flex bg-[#393939] mt-20 items-center justify-center'>
             
-        <div className='flex flex-col md:flex-row items-center justify-between lg:px-20'>
+        <div className='flex flex-col  lg:gap-16 md:flex-row '>
 
-          <div className='sm:my-12 '>
+          <div className='sm:my-12 w-1/5 '>
           <h6 className='text-base text-white font-bold mb-5 whitespace-nowrap'>Phone Number</h6>
           <div>
           <img src="/whitephone.png" alt="phone" />
@@ -22,18 +18,18 @@ const Footer = () => {
             </div>
             </div>
 
-            <div className='sm:my-12'>
+            <div className='sm:my-12 w-1/5'>
             <h6 className='text-base text-white font-bold mb-5'>Location</h6>
               <p  className='font-light text-white mt-4 mb-5 text-base whitespace-nowrap' >Fakultetska 1, Zenica </p>
               <p className='font-light text-white mt-1 text-base whitespace-nowrap'>Bosna i Hercegovina</p>
             </div>
 
-            <div className='sm:my-12'>
+            <div className='sm:my-12 w-1/5'>
             <img src="/logo.png" alt="logo" width={256} height={256} />
             <p className='text-center text-white font-light text-base mt-10 whitespace-nowrap'>© 2022. All rights reserved.</p>
             </div>
 
-            <div className='sm:my-12'>
+            <div className='sm:my-12 w-1/5'>
             <h6 className='text-base text-white font-bold mb-3'>Links</h6>
             <ul>
               <li className='mb-5 hover:underline'></li>
@@ -46,7 +42,7 @@ const Footer = () => {
             </div>
 
 
-            <div className='sm:my-12'>
+            <div className='sm:my-12 w-1/5'>
             <h6 className='text-base text-white font-bold mb-3 whitespace-nowrap'>Social Media</h6>
             <ul>
               <li className='mb-5 hover:underline'></li>
