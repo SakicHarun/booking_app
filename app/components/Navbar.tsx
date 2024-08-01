@@ -3,12 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 const Navbar = () => {
   return (
-<div className='w-full flex p-5 '>
+<div className='w-full flex sm:p-3 lg:p-5'>
 
 
-    <div className='w-full  flex relative p-5 '>
+    {/* <div className='w-full bg-slate-600  flex relative p-5 '>
       
-<div className='w-full flex items-center  ml-40'>
+<div className='w-full flex items-center  ml-40'> */}
 
   <a className='flex items-center'  href="/">
   <Image
@@ -38,11 +38,11 @@ const Navbar = () => {
        
 
 
-    </div>
+//     </div>
 
 
 
-</div>
+// </div>
   )
 }
 
