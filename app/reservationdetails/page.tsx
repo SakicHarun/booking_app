@@ -1,15 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import ReservationDetails from '../components/ReservationDetails'
 import Footer from '../components/Footer'
 
-const page = () => {
+import ReservationDetails from '../components/ReservationDetails'
+function page() {
   return (
-    <> 
-    <Navbar/>
-    <ReservationDetails/>
-    <Footer/>
-    </>
+    <div>
+        <Navbar></Navbar>
+        <ReservationDetails></ReservationDetails>
+        <Footer></Footer>
+      
+    </div>
   )
 }
 

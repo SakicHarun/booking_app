@@ -6,8 +6,8 @@ function ReservationDetails() {
 
             <h1 className='text-6xl mt-10 font-semibold  text-[#323642] whitespace-nowrap mb-4'>Reservation Details</h1>
 
-            <div className='mt-25 flex gap-40'>
-                <form className="w-150 flex">
+            <div className='mt-25 flex flex-row gap-48'>
+                <form className="lg:w-150 sm:w-32 flex">
                     <div className='text-left'>
                         <div className='w-150 mb-4 text-left'>
                         <label htmlFor="numOfPeople">Enter number of people staying:</label>
