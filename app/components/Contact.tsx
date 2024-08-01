@@ -5,7 +5,7 @@ import { faPhone} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div className='w-full flex  flex-col sm:flex-row sm:gap-28 px-28 '>
+    <div className='w-full flex  flex-col sm:flex-row sm:gap-28 px-28  '>
        
     
    
@@ -67,7 +67,7 @@ const Contact = () => {
 
        
       <form className="w-150 flex" id="contact-segment">
-        <div className='text-left'>
+        <div className='ml-72 text-left'>
             <div className='w-150 mb-4 mt-40 text-left'>
             <label htmlFor="name">Full name:</label>
             <input id='name' type="text" placeholder='John Doe' 
