@@ -8,9 +8,9 @@ import { faLocationDot,faSquareParking,faWifi,faCaretDown,faMugSaucer,faSquareCh
 const SelectedAccomoadation = () => {
 
   return (
-    <div className='sm:m-5 flex-row lg:mx-20 '>
+    <div className='sm:m-5 w-full flex-row  px-30 '>
 
-      <div className='flex shadow-lg    py-10'>
+      <div className='flex py-10'>
 
     
         <h4 className='font-semibold text-3xl text-[#323642] whitespace-nowrap'>Hotel Dubrovnik Zenica</h4>
@@ -22,13 +22,24 @@ const SelectedAccomoadation = () => {
         <FontAwesomeIcon icon={faStar} className='text-[#E9E12D] ml-5' width={32} height={32} />
 
         <p className='whitespace-nowrap mt-1 ml-5 font-semibold text-2xl text-[#323642]'>4 stars</p>
-
-    
-        <img src="/Hotel-Dubrovnik2.png" alt="" className='rounded-xl mt-20 -ml-172  '/>
-       <img src="/slikesmjestaja.png" className='mt-20 ml-62' alt="" />
-       <FontAwesomeIcon icon={faLocationDot} width={32} height={32} className='mt-160 -ml-72  ' />
-       <p className='mt-160  whitespace-nowrap'>Location:Skolska 10 ,Zenica</p>
         </div>
+         <div className='flex-row flex mb-5'>
+         <img src="/Hotel-Dubrovnik.webp" width={1220} height={1024} alt="" className='  '/>
+         <div className='flex-col flex gap-1 '>
+         <img src="/slikasmjestaja1.png" className='' alt="" />
+       <img src="/slikasmjestaja2.png" className='' alt="" />
+       <img src="/slikasmjestaja3.png" className='' alt="" />
+       <img src="/slikasmjestaja4.png" className='' alt="" />
+         </div>
+     
+
+         </div>
+         <div className='flex flex-row justify-center '>
+         <FontAwesomeIcon icon={faLocationDot} width={32} height={32} className='' />
+         <p className='  whitespace-nowrap mt-2 ml-2'>Location:Skolska 10 ,Zenica</p>
+         </div>
+   
+       
         <div className='mt-20  w-110 flex-row'>
       
           <h4 className='font-semibold text-2xl text-[#323642]'>Most popular facilities: </h4>
@@ -97,8 +108,8 @@ const SelectedAccomoadation = () => {
         <p className='font-semibold text-base text-[#323642]'>Double room</p>
         </div>
         <div className=''>
-        <h4  className='font-semibold text-2xl text-[#323642] whitespace-nowrap  '>Select amount of rooms:</h4>
-         <input type="number" name="" id="amountofrooms" />
+        <h4  className='font-semibold text-2xl text-[#323642] whitespace-nowrap '>Select amount of rooms:</h4>
+         <input type="number" name="" id="amountofrooms" className=' border-2 border-gray-400 ' />
         </div>
         <div className=''>
         <h4 className='font-semibold text-2xl  text-[#323642] whitespace-nowrap'>Price:</h4>
@@ -123,7 +134,7 @@ const SelectedAccomoadation = () => {
  <br />
  Drinks can also be enjoyed on the hotel’s terrace.</p>
 
- <a href='/reservationdetails' className='px-5 py-3 whitespace-nowrap font-semibold ml-300  text-lg bg-[#F16A67] rounded-lg mr-1 text-white font-sans w-10'>Reserve</a>
+ <a href='/reservationdetails' className='px-5 py-3 whitespace-nowrap font-semibold   text-lg bg-[#F16A67] rounded-lg mr-1 text-white font-sans w-10'>Reserve</a>
           </div>
     
 

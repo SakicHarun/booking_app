@@ -6,7 +6,7 @@ function ReservationDetails() {
 
             <h1 className='text-6xl mt-10 font-semibold  text-[#323642] whitespace-nowrap mb-4'>Reservation Details</h1>
 
-            <div className='mt-25 flex flex-row gap-48'>
+            <div className='mt-25 flex flex-row justify-between '>
                 <form className="lg:w-150 sm:w-32 flex">
                     <div className='text-left'>
                         <div className='w-150 mb-4 text-left'>
@@ -56,7 +56,7 @@ function ReservationDetails() {
                     </div>
                 </form>
 
-                <div>
+                <div className='mr-60'>
                     <h3 className='text-2xl font-semibold  text-[#323642]'>Booking details</h3>
                     <img src="/HotelDubrovnik2.png" className='rounded-xl shadow-md mt-8' height={578} width={426} alt="" />
                 </div>
