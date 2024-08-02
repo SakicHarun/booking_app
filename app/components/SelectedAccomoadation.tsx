@@ -90,18 +90,18 @@ const SelectedAccomoadation = () => {
             </div>
 
         </div>
-        <div className='mt-20 w-full h-full items-center justify-between'>
+        <div className='mt-20 flex-row flex w-full justify-between'>
         
         <div className=''>
         <h4 className='font-semibold text-2xl text-[#323642]'>Type of room:</h4>
-        <p className=''>Double room</p>
+        <p className='font-semibold text-base text-[#323642]'>Double room</p>
         </div>
         <div className=''>
-        <h4  className='font-semibold text-2xl text-[#323642] whitespace-nowrap ml-200 -mt-14'>Type of room:</h4>
-  
+        <h4  className='font-semibold text-2xl text-[#323642] whitespace-nowrap  '>Select amount of rooms:</h4>
+         <input type="number" name="" id="amountofrooms" />
         </div>
-        <div className='ml-380'>
-        <h4 className='font-semibold text-2xl -mt-9 text-[#323642] whitespace-nowrap'>Price:</h4>
+        <div className=''>
+        <h4 className='font-semibold text-2xl  text-[#323642] whitespace-nowrap'>Price:</h4>
         <p className='text-[#f16a67] text-32px font-semibold '>99.9KM/dan</p>
         </div>
         </div>
