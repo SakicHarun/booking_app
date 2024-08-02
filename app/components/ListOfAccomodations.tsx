@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
-import { FaThumbsUp } from 'react-icons/fa';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { FaMapMarkerAlt } from 'react-icons/fa';
-import { AiOutlineDown } from 'react-icons/ai';
+import { faMagnifyingGlass, faThumbsUp, faMapMarkerAlt, faDownLong } from "@fortawesome/free-solid-svg-icons";
+
 
 const StarIcon: React.FC<{ filled: boolean; onClick: () => void; onMouseEnter: () => void; onMouseLeave: () => void }> = ({ filled, onClick, onMouseEnter, onMouseLeave }) => (
   <svg
@@ -66,10 +65,7 @@ const ListOfAccommodations: React.FC = () => {
                     className="py-2 pl-10 rounded text-left border font-light text-base text-[#323642] border-[#B7B5B5]*0.4 w-full mt-1"
                     value={''}
                   />
-                  <FaSearch
-                    className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#B7B5B5]"
-                    size={20}
-                  />
+                  <FontAwesomeIcon icon={faMagnifyingGlass} width={24} height={24} />
                 </div>
 
                 <p className='mt-10 font-medium text-base text-[#323642]'>Type of Accommodation:</p>
@@ -82,11 +78,7 @@ const ListOfAccommodations: React.FC = () => {
                     readOnly
                     onClick={toggleDropdown}
                   />
-                  <AiOutlineDown
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#B7B5B5] cursor-pointer"
-                    size={20}
-                    onClick={toggleDropdown}
-                  />
+                  <FontAwesomeIcon icon={faDownLong} width={24} height={24} />
                   {isDropdownOpen && (
                     <div className="absolute z-10 mt-2 w-full bg-white border border-[#B7B5B5] rounded shadow-lg">
                       <ul className="list-none m-0 p-0">
@@ -299,7 +291,7 @@ const ListOfAccommodations: React.FC = () => {
                     ))}
                   </div>
                   <div className='flex mt-5 mb-5 items-center'>
-                    <FaThumbsUp className='text-gray-800 ml-72 w-6 h-6 cursor-pointer'/>
+                    
                     <span className='ml-2 text-2xl text-[#323642] font-semibold'>4,5</span>
                     <p className='ml-24 -mt-24 whitespace-nowrap'>4 stars</p>
                     <p className='ml-10 -mt-24 text-[#F16A67] font-semibold text-40px mr-5'>99.9KM/d</p>
@@ -308,7 +300,7 @@ const ListOfAccommodations: React.FC = () => {
                 <p className='ml-72 text-base font-semibold mb-5'>Zenica</p>
                 <p className='ml-72 text-base font-semibold mb-5'>250 m from centre</p>
                 <p className='flex items-center ml-72 text-2xl font-semibold'>
-                  <FaMapMarkerAlt style={{ width: '24px', height: '24px' }} className='text-[#323642] -ml-2 mr-2' />
+                <FontAwesomeIcon icon={faMapMarkerAlt} width={24} height={24} />
                   Address: Skolska 10, Zenica
                   <img className='ml-10' src="/arrow.png" alt="" />
                 </p>
@@ -334,7 +326,7 @@ const ListOfAccommodations: React.FC = () => {
                     ))}
                   </div>
                   <div className='flex mt-5 mb-5 items-center'>
-                    <FaThumbsUp className='text-gray-800 ml-72 w-6 h-6 cursor-pointer'/>
+                  <FontAwesomeIcon icon={faThumbsUp} width={24} height={24} />
                     <span className='ml-2 text-2xl text-[#323642] font-semibold'>4,5</span>
                     <p className='ml-24 -mt-24 whitespace-nowrap'>4 stars</p>
                     <p className='ml-10 -mt-24 text-[#F16A67] font-semibold text-40px mr-5'>99.9KM/d</p>
@@ -343,7 +335,7 @@ const ListOfAccommodations: React.FC = () => {
                 <p className='ml-72 text-base font-semibold mb-5'>Zenica</p>
                 <p className='ml-72 text-base font-semibold mb-5'>250 m from centre</p>
                 <p className='flex items-center ml-72 text-2xl font-semibold'>
-                  <FaMapMarkerAlt style={{ width: '24px', height: '24px' }} className='text-[#323642] -ml-2 mr-2' />
+                <FontAwesomeIcon icon={faMapMarkerAlt} width={24} height={24} />
                   Address: Skolska 10, Zenica
                   <img className='ml-10' src="/arrow.png" alt="" />
                 </p>
@@ -369,7 +361,7 @@ const ListOfAccommodations: React.FC = () => {
                     ))}
                   </div>
                   <div className='flex mt-5 mb-5 items-center'>
-                    <FaThumbsUp className='text-gray-800 ml-72 w-6 h-6 cursor-pointer'/>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} width={24} height={24} />
                     <span className='ml-2 text-2xl text-[#323642] font-semibold'>4,5</span>
                     <p className='ml-24 -mt-24 whitespace-nowrap'>4 stars</p>
                     <p className='ml-10 -mt-24 text-[#F16A67] font-semibold text-40px mr-5'>99.9KM/d</p>
@@ -378,7 +370,7 @@ const ListOfAccommodations: React.FC = () => {
                 <p className='ml-72 text-base font-semibold mb-5'>Zenica</p>
                 <p className='ml-72 text-base font-semibold mb-5'>250 m from centre</p>
                 <p className='flex items-center ml-72 text-2xl font-semibold'>
-                  <FaMapMarkerAlt style={{ width: '24px', height: '24px' }} className='text-[#323642] -ml-2 mr-2' />
+                <FontAwesomeIcon icon={faMapMarkerAlt} width={24} height={24} />
                   Address: Skolska 10, Zenica
                   <img className='ml-10' src="/arrow.png" alt="" />
                 </p>
@@ -404,7 +396,7 @@ const ListOfAccommodations: React.FC = () => {
                     ))}
                   </div>
                   <div className='flex mt-5 mb-5 items-center'>
-                    <FaThumbsUp className='text-gray-800 ml-72 w-6 h-6 cursor-pointer'/>
+                  <FontAwesomeIcon icon={faThumbsUp} width={24} height={24} />
                     <span className='ml-2 text-2xl text-[#323642] font-semibold'>4,5</span>
                     <p className='ml-24 -mt-24 whitespace-nowrap'>4 stars</p>
                     <p className='ml-10 -mt-24 text-[#F16A67] font-semibold text-40px mr-5'>99.9KM/d</p>
@@ -413,7 +405,7 @@ const ListOfAccommodations: React.FC = () => {
                 <p className='ml-72 text-base font-semibold mb-5'>Zenica</p>
                 <p className='ml-72 text-base font-semibold mb-5'>250 m from centre</p>
                 <p className='flex items-center ml-72 text-2xl font-semibold'>
-                  <FaMapMarkerAlt style={{ width: '24px', height: '24px' }} className='text-[#323642] -ml-2 mr-2' />
+                <FontAwesomeIcon icon={faMapMarkerAlt} width={24} height={24} />
                   Address: Skolska 10, Zenica
                   <img className='ml-10' src="/arrow.png" alt="" />
                 </p>
@@ -439,7 +431,7 @@ const ListOfAccommodations: React.FC = () => {
                     ))}
                   </div>
                   <div className='flex mt-5 mb-5 items-center'>
-                    <FaThumbsUp className='text-gray-800 ml-72 w-6 h-6 cursor-pointer'/>
+                  <FontAwesomeIcon icon={faThumbsUp} width={24} height={24} />
                     <span className='ml-2 text-2xl text-[#323642] font-semibold'>4,5</span>
                     <p className='ml-24 -mt-24 whitespace-nowrap'>4 stars</p>
                     <p className='ml-10 -mt-24 text-[#F16A67] font-semibold text-40px mr-5'>99.9KM/d</p>
@@ -448,7 +440,7 @@ const ListOfAccommodations: React.FC = () => {
                 <p className='ml-72 text-base font-semibold mb-5'>Zenica</p>
                 <p className='ml-72 text-base font-semibold mb-5'>250 m from centre</p>
                 <p className='flex items-center ml-72 text-2xl font-semibold'>
-                  <FaMapMarkerAlt style={{ width: '24px', height: '24px' }} className='text-[#323642] -ml-2 mr-2' />
+                <FontAwesomeIcon icon={faMapMarkerAlt} width={24} height={24} />
                   Address: Skolska 10, Zenica
                   <img className='ml-10' src="/arrow.png" alt="" />
                 </p>
